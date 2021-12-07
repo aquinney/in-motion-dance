@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 1.3rem;
+  }
+  .row {
+    border-bottom: 2px solid #333;
+  }
+  #staff-firstRow {
+    border-top: 2px solid #333;
+  }
+  .staff-topText {
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .staff-column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .staff-column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  .staff-column-33 img{
+    border: 4px black solid;
+    border-radius: 4px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 900px) {
+    .staff-column-66,
+    .staff-column-33 {
+      width: 100%;
+      text-align: center;
+    }
+  }

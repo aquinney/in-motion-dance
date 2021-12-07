@@ -1,0 +1,86 @@
+
+
+.rates-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.rates-content h1{
+    text-align: center;
+}
+/* .rates-paymentMethods {
+
+}
+.rates-requiredFees {
+
+} */
+.rates-requiredFees p ul{
+    padding-left: 40px;
+}
+.rates-studentHours {
+    text-align: center;
+
+}
+.rates-studentHours ul{
+    /* list-style-type: none; */
+    list-style: inside; /* bullet points come to center */
+}
+.rates-studentHours li{
+    padding-bottom: 8px;
+}
+.rates-studentHours ul{
+    padding-left: 45px;
+}
+/* .rates-familyDiscount {
+
+} */
+.rates-familyDiscount p{
+    text-align: center;
+}
+.rates-adultClasses {
+
+    text-align: center;
+}
+.rates-adultClasses p{
+    margin-bottom: 10px;
+}
+.rates-cancellation {
+
+    margin-bottom: 5px;
+}
+.rates-cancellation ul{
+    padding-left: 40px;
+}
+.rates-paymentMethods h2,
+.rates-requiredFees h2,
+.rates-studentHours h2,
+.rates-familyDiscount h2,
+.rates-adultClasses h2,
+.rates-cancellation h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+.rates-paymentMethods p,
+.rates-requiredFees p,
+.rates-studentHours p,
+.rates-familyDiscount p,
+.rates-adultClasses p,
+.rates-cancellation p {
+    padding: 5px 5px 5px 10px;
+}
+.rates-paymentMethods,
+.rates-requiredFees,
+.rates-studentHours,
+.rates-familyDiscount,
+.rates-adultClasses,
+.rates-cancellation {
+    border: 2px black solid;
+    border-radius: 8px;
+    min-height: 100px;
+    margin-top: 15px;
+}

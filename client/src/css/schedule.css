@@ -1,0 +1,51 @@
+.schedule-content {
+    justify-content: center;
+    padding: 20px 20px;
+}
+.schedule-gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.0rem;
+    justify-content: center;
+}
+.schedule-content table {
+    border-collapse: collapse;
+    border: black solid 3px;
+    margin-bottom: 15px;
+    max-width: 365px;
+}
+.schedule-content td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+.schedule-content td {
+text-align: left;
+}
+.schedule-content th {
+    text-align: center;
+}
+.schedule-content h1 {
+text-align: center;
+}
+.schedule-mondayColumn,
+.schedule-tuesdayColumn,
+.schedule-wednesdayColumn,
+.schedule-thursdayColumn,
+.schedule-fridayColumn,
+.schedule-saturdayColumn {
+    margin: 0 auto;
+}
+@media screen and (max-width: 1090px) {
+    .schedule-gridWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .schedule-gridWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-gridWrapper h2{
+        text-align: center;
+    }
+  }

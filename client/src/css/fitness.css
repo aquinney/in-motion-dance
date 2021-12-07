@@ -1,0 +1,15 @@
+.fitness-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.fitness-content img{
+    width: 80%;
+}
+.fitness-content h1{
+    text-decoration: underline;
+}

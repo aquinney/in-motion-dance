@@ -1,0 +1,136 @@
+.nav {
+    font-weight: 700;
+    border-bottom: #333 3px solid;
+    background-color: #CBBDBA;
+
+    &__toggle {
+        position: absolute; /* This was 'fixed', but it caused the button to drag down the screen which I don't like :( */
+        cursor: pointer;
+        margin: 1.5rem 3.5rem;
+        right: 0;
+
+        svg {
+            width: 2.2rem;
+            fill:#5E5E5E;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .menu {
+            margin-top: 0.2rem;
+        }
+    }
+
+&__checkbox {
+    display: none;
+}
+
+&__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+    padding-inline-start: 0;
+
+    li {
+        list-style: none;
+        display: none;
+    
+        &:first-child{
+            margin-right: auto; // this would be for logo
+            display: block;
+        }
+
+        .logo {
+            width: 120px;
+            border: 3px black solid;
+        }
+
+        ul.classInfoDropdown {
+            min-width: 100px;
+            padding: 5px 5px 5px 5px;
+            background: #5e5e5e;
+            display: none; // Hide dropdown when not hovered
+            position: absolute;
+            z-index: 999; //This should allow dropdown menu to display over everything else.
+            align-items: center;
+            text-align: left;
+
+            li {
+                margin: 5px 0 5px 0;
+            }
+        }
+
+    }
+    li:hover ul.classInfoDropdown {
+        display:block;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.1rem;
+    }
+    a:hover {
+        // border-bottom: red 3px solid;
+        // border-radius: 2px;
+        color: #d869ba;
+        text-decoration: underline;
+    }
+    #logo-anchor-tag:hover {
+        background-color: #CBBDBA; // This prevents the logo from displaying a hover effect.
+        padding: 0px;
+    }
+}
+#Navbar-Logo-ListItem {
+    padding-top: 14px;
+}
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+    display: block; // This checks for user selection, and open nav menu if selected
+  }
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+      display: block;
+  }
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 755px) {
+    .nav {
+        &__toggle {
+            display: none;
+        }
+        &__menu {
+            flex-direction: row;
+
+            li {
+                display: block;
+            }
+        }
+        min-height: 100px;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* padding-right: 1rem; */
+        /* float: right; */
+    }
+    #logo-anchor-tag:hover {
+        background-color: #fff; // This prevents the logo from displaying a hover effect.
+        padding: 0px;
+    }
+}

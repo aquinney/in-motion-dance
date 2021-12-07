@@ -1,0 +1,36 @@
+.performances-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+#performances-bottomNote,
+#performances-topNote {
+    text-align: center;
+}
+
+
+.performances-content h1{
+    text-align: center;
+}
+.performances-main,
+.performances-recitals {
+    border: 2px black solid;
+    border-radius: 8px;
+    min-height: 100px;
+    margin-top: 15px;
+}
+.performances-main h2,
+.performances-recitals h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.performances-main p,
+.performances-recitals p{
+    padding: 5px 5px 10px 10px;
+}
+.performances-recitals ul {
+    padding-left: 45px;
+}

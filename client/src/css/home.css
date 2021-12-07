@@ -1,0 +1,119 @@
+/* #pageTitle {
+  text-align: center;
+} */
+.home-content h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+#welcomeMsg {
+  border: 2px black solid;
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  min-height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcomeMsg ul {
+  list-style: inside;
+}
+.welcomeImg {
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+.welcomeImg img{
+  max-width: 100%;
+  border: black 4px solid;
+  border-radius: 4px;
+  max-height: 500px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .home-container {
+    padding: 2.5rem;
+    border-top: 4px #333 solid;
+    margin-top: 5px;
+  }
+  
+  /* Clear floats */
+  .home-row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .home-column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .home-column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  .home-column-33 img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border: 4px black solid;
+    border-radius: 4px;
+  }
+
+  /* Style the counter cards */
+  .card {
+    padding: 8px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card ul {
+    padding: 16px;
+  }
+
+  /* Clear floats after the columns */
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  /* Remove extra left and right margins, due to padding in columns */
+.card-row {
+  margin: 0 -5px;
+  margin-top: 10px;
+  border-top: 4px #333 solid;
+}
+
+  /* Float four columns side by side */
+.card-column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 755px) {
+    .home-column-66, .home-column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    .home-column-33 img {
+      margin: auto;
+      max-width: 150px;
+    }
+    .card-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

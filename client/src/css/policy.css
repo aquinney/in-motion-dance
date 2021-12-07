@@ -1,0 +1,72 @@
+/* Main wrapper for entire policy page */
+.policy-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+/* Main title */
+.policy-content h1 {
+ text-decoration: underline;
+ text-align: center;
+}
+.policy-redNote {
+    color: red;
+}
+/* All policy divs */
+.policy-general,
+.policy-addTransfer,
+.policy-cancelation,
+.policy-makeup,
+.policy-endOfSeason,
+.policy-dressCode,
+.policy-dropOff {
+    border: 2px black solid;
+    border-radius: 8px;
+    min-height: 100px;
+    margin-top: 15px;
+}
+/* all title elements in each section */
+.policy-general h2,
+.policy-addTransfer h2,
+.policy-cancelation h2,
+.policy-makeup h2,
+.policy-endOfSeason h2,
+.policy-dressCode h2,
+.policy-dropOff h2{
+    text-align: center;
+    text-decoration: underline;
+}
+/* all paragraph elements in each section */
+.policy-general p,
+.policy-addTransfer p,
+.policy-cancelation p,
+.policy-makeup p,
+.policy-endOfSeason p,
+.policy-dressCode p,
+.policy-dropOff p {
+    padding: 5px 5px 10px 10px;
+}
+.policy-dropOff ul {
+    padding-left: 45px;
+}
+.policy-dropOff li {
+    padding-bottom: 10px;
+}
+.policy-general ul {
+    padding-left: 45px;
+}
+.policy-dressCode p i {
+    padding-left: 50px;
+}
+.policy-dressCode p ul {
+    padding-left: 25px;
+}
+.policy-dressCode p ul li{
+    padding-bottom: 10px;
+}
+.policy-dressCode p ul ul{
+    padding-left: 45px;
+}

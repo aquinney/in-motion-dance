@@ -1,0 +1,144 @@
+.enroll-body {
+    position: relative;
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+.enroll-container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #e2bede;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.enroll-topleft-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+    align-content: center;
+    padding: 10px;
+}
+.enroll-bottomright-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+    align-content: center;
+    padding: 10px;
+}
+
+.enroll-container .enroll-title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.enroll-container .enroll-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+}
+#enrollment-form {
+    display: flex;
+    flex-direction: column;
+}
+.enroll-container form .enroll-user-details {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    margin: 20px 0 12px 0;
+}
+form .enroll-user-details .enroll-input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.enroll-user-details .enroll-input-box .enroll-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.enroll-comment-box {
+    width: 100%;
+    font-weight: 500;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.enroll-comment-box span{
+    margin-bottom: 5px;
+}
+.enroll-comment-box textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
+    width: 70%;
+    min-height: 120px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    resize: none;
+    outline: none;
+}
+.enroll-user-details .enroll-input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.enroll-user-details .enroll-input-box input:focus,
+.enroll-user-details .enroll-input-box input:focus:valid {
+    border-color: #9b59b6;
+}
+#enrollment-form .enroll-comment-box textarea:focus,
+#enrollment-form .enroll-comment-box textarea:focus:valid {
+    border-color: #9b59b6;
+}
+.enroll-button {
+    height: 45px;
+    margin: 45px 0;
+}
+.enroll-button input {
+    height: 100%;
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.enroll-button input:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .enroll-container {
+        max-width: 100%;
+    }
+    form .enroll-user-details .enroll-input-box {
+        margin-bottom: 15px;
+        width: 100%n;
+    }
+    .enroll-topleft-column {
+        width: 100%;
+    }
+    .enroll-bottomright-column {
+        width: 100%;
+    }
+
+}

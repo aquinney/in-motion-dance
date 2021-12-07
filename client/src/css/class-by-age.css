@@ -1,0 +1,41 @@
+.classByAge-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+.classByAge-content h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.classByAge-content table {
+    border-collapse: collapse;
+    width: 100%;
+    border: black solid 3px;
+    margin-bottom: 15px;
+}
+.classByAge-content td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.classByAge-content th {
+    text-decoration: underline;
+}
+@media screen and (max-width: 605px) {
+    table {
+        font-size: .6rem;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    table {
+        font-size: .4rem;
+    }
+  }
+  /* Just in case somebody has a freaking tiny screen... */
+  @media screen and (max-width: 320px) {
+    table {
+        font-size: .2rem;
+    }
+  }   

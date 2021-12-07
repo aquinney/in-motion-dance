@@ -1,0 +1,22 @@
+#footerWrapper {
+    border-top: #706968 3px solid;
+    /* border-radius: 0 0 6px 6px; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    text-align: center;
+    min-height: 150px;
+    background-color: #CBBDBA;
+    vertical-align: middle;
+}
+.footer-icon svg{
+    float: right;
+    margin-right: 15px;
+    text-decoration: none;
+}
+#footerWrapper h1 {
+    padding-top: 10px;
+}
+.footer-icon a {
+    text-decoration: none;
+}
